@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 445px;
+  gap: 30px;
+}
+.homeBox {
+  width: 445px;
+  height: 445px;
+  border-radius: 10px;
+}
+.thumbnail {
+  width: 88px;
+  height: 88px;
+}
+/* .thumbnail:single-button {
+  background: lightgray 50% / cover no-repeat;
+  border: 1px solid #ff7d1a;
+} */
+.active {
+  border: 1px solid var(--main, #ff7d1a);
+  opacity: 0.5;
+}

@@ -1,0 +1,43 @@
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  align-self: flex-end;
+}
+.logo {
+  width: 137.5px;
+  height: 20px;
+}
+.header {
+  display: flex;
+  width: 1000px;
+  height: 105px;
+  align-items: center;
+  /* gap: 270px; */
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+.img {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+}
+.leftPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+}
+
+.leftPart svg {
+  cursor: pointer;
+}

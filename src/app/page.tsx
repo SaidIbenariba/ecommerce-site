@@ -1,95 +1,68 @@
-import Image from "next/image";
+// import Image from "next/image";
+"use client";
 import styles from "./page.module.css";
+import ProductPage from "./components/ProductPage/ProductPage";
+import { Kumbh_Sans } from "@next/font/google";
+import { useState } from "react";
+import image1 from "../../images/product1-images/image-product-1-thumbnail.jpg";
+import image2 from "../../images/product1-images/image-product-2-thumbnail.jpg";
+import image3 from "../../images/product1-images/image-product-3-thumbnail.jpg";
+import image4 from "../../images/product1-images/image-product-4-thumbnail.jpg";
+import image1b from "../../images/product1-images/image-product-1.jpg";
+import image2b from "../../images/product1-images/image-product-2.jpg";
+import image3b from "../../images/product1-images/image-product-3.jpg";
+import image4b from "../../images/product1-images/image-product-4.jpg";
+import { stringify } from "querystring";
+import { StaticImageData } from "next/image";
+import { imageObject, MyArray } from "./compiler/types";
+// import CartIcon from "./components/Icon/CartIcon";
+
+// const images: imageObject[] = [];
+// images.push(
+
+// );
+const images: MyArray<imageObject> = [
+  { small: image1, big: image1b },
+  {
+    small: image2,
+    big: image2b,
+  },
+  {
+    small: image3,
+    big: image3b,
+  },
+  {
+    small: image4,
+    big: image4b,
+  },
+];
+
+const kumbh_Sans = Kumbh_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Home() {
+  const [product, setProduct] = useState({
+    id: 1,
+    name: "sneakers",
+    price: 200,
+    reduction: 50,
+    description:
+      "These low-profile sneakers are your prefect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. ",
+    PicturesObject: images,
+  });
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className={(kumbh_Sans.className, styles.main)}>
+      <ProductPage
+        id={product.id}
+        name={product.name}
+        price={product.price}
+        reduction={product.reduction}
+        description={product.description}
+        PicturesObject={product.PicturesObject}
+        promotion="Fall Limited Edition Sneakers"
+      />
+    </div>
   );
 }

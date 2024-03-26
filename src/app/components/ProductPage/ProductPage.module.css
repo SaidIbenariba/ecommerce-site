@@ -1,4 +1,4 @@
-.main {
+.ProductPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,13 +6,13 @@
   align-items: center;
   padding: 1rem;
   min-height: 100vh;
-  /* padding-top: 0; */
+  padding-top: 0;
 }
-/* .center {
+.center {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 49px;
   align-items: center;
   width: 1000px;
-} */
+}

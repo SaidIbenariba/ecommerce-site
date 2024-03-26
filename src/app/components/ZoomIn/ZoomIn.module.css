@@ -1,0 +1,60 @@
+.zoomIn {
+  display: inline-flex;
+  flex-direction: column;
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  gap: 10px;
+  width: 100vw;
+  height: 133vh;
+  padding: 0;
+  padding-bottom: 33vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  /* align-content: center; */
+  background-color: #000000c9;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 450px;
+  gap: 30px;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 450px;
+  gap: 30px;
+}
+.homeBox {
+  width: 445px;
+  height: 445px;
+  border-radius: 10px;
+}
+.thumbnail {
+  width: 88px;
+  height: 88px;
+}
+/* .thumbnail:single-button {
+    background: lightgray 50% / cover no-repeat;
+    border: 1px solid #ff7d1a;
+  } */
+.active {
+  border: 1px solid var(--main, #ff7d1a);
+  opacity: 0.7;
+}
+.previousIcon {
+  position: relative;
+  left: -31px;
+  top: 279px;
+}
+.nextIcon {
+  position: relative;
+  left: 329px;
+  top: 279px;
+}

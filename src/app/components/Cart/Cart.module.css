@@ -1,0 +1,96 @@
+.cart {
+  position: relative;
+  display: inline-flex;
+  /* height: 255.5px; */
+  width: 360px;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 79px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 13px 32.4px -7px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  padding-top: 24px;
+  /* left: 320px; */
+  /* top: -667px; */
+  /* right: auto; */
+  bottom: auto;
+  padding-bottom: 79px;
+  top: auto;
+  bottom: 756px;
+  left: auto;
+  right: -318px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 336px;
+  height: 43px;
+  padding-left: 24px;
+  border-bottom: 1px solid #00000021;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 19.429px */
+}
+.cart p {
+  width: 143px;
+  height: 19px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 19.429px */
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.item svg {
+  cursor: pointer;
+}
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.product {
+  width: 48px;
+  height: 48px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 217px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.429%; /* 19.429px */
+}
+.text p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.429%; /* 19.429px */
+  margin: 0;
+}
+.text span {
+  color: #000;
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.429%;
+  letter-spacing: 0.32px;
+}

@@ -1,0 +1,140 @@
+.productDetails {
+  display: flex;
+  height: 565px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 27px;
+  flex-shrink: 0;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 29px; */
+}
+.description span {
+  width: 172.19px;
+  height: 13px;
+  color: var(--main, #ff7d1a);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.98px;
+}
+.description h2 {
+  width: 421.605px;
+  height: 97px;
+  color: var(--Black, rgba(0, 0, 0, 0.75));
+  font-size: 43.111px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 52.349px */
+  letter-spacing: 0.862px;
+}
+.description p {
+  width: 441px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151%; /* 24.16px */
+  letter-spacing: 0.16px;
+}
+.priceBox {
+  display: flex;
+  width: 243px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 11px 65px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.priceBox div:nth-child(1) {
+  width: 80px;
+  height: 34px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 36.429px */
+  letter-spacing: -0.9px;
+}
+.priceBox div:nth-child(2) {
+  display: flex;
+  width: 47px;
+  height: 27px;
+  /* padding: 10px; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--Secondery, #ffede0);
+  color: #ff7d1a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%;
+  letter-spacing: -0.48px;
+  /* margin: 0;
+  padding: 0; */
+}
+.priceBox div:nth-child(3) {
+  width: 68px;
+  height: 22px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 17.056px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 20.71px */
+  letter-spacing: -0.512px;
+  text-decoration: line-through;
+}
+
+.quantityButton {
+  display: flex;
+  width: 176px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  border-radius: 10px;
+  background: #f7f8fd;
+}
+
+.quantityButton svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 16.056px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 19.496px */
+  letter-spacing: -0.482px;
+  cursor: pointer;
+}
+.quantityButton div {
+  color: #000;
+  font-size: 16.056px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%; /* 19.496px */
+  letter-spacing: -0.482px;
+}
+.priceAddBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.priceAddBox button svg {
+  fill: #fff;
+}
